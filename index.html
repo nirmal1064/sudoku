@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sudoku</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="game-title">Sudoku</h1>
+        <hr />
+        <section class="hud">
+            <p>Mistakes <span id="error-count">0</span></p>
+            <p>Cells: <span id="cells-count"></span></p>
+            <div class="timer-container">
+                <button class="play-button" id="play-button">Play</button>
+                <p id="timer" class="timer">00:00</p>
+            </div>
+        </section>
+        <main class="game-area">
+            <section id="game-board" class="game-board hide-element"></section>
+            <section id="dummy-board" class="game-board"></section>
+            <section id="input-keys" class="input-keys"></section>
+        </main>
+        <p id="result"></p>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+:root {
+    --game-width: 450px;
+    --number-font-size: 25px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hud {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-title {
+    text-align: center;
+}
+
+#error-count {
+    color: red;
+}
+
+.game-area {
+    width: var(--game-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.play-button {
+    /* background-color: blue; */
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.game-board {
+    height: var(--game-width);
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    /* gap: 2px; */
+    border: 1px solid black;
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: var(--number-font-size);
+    border: 1px solid lightgray;
+    user-select: none;
+}
+
+.answer-square {
+    color: blue;
+}
+
+.mistake-square {
+    color: red;
+}
+
+.input-keys {
+    width: var(--game-width);
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+}
+
+.input-number {
+    flex-grow: 1;
+    /* background-color: #E2EBF3; */
+    height: 100%;
+    border: 1px solid black;
+    font-size: var(--number-font-size);
+    user-select: none;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-square {
+    background-color: aqua;
+}
+
+.related-square {
+    /* background-color: #EAEAEA; */
+    background-color: #DCE3ED;
+}
+
+.selected-input {
+    background-color: gray;
+}
+
+.vertical-border {
+    border-right-color: black;
+}
+
+.horizontal-border {
+    border-bottom-color: black;
+}
+
+.timer {
+    color: blue;
+}
+
+.hide-element {
+    display: none;
+}
